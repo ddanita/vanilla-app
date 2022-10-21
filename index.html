@@ -17,55 +17,63 @@
   </head>
   <body>
     <div class="container">
-      <div class="vanilla-app">
-        <div class="row">
-          <div class="col-4">
-            <h1>Abuja</h1>
+      <div class="vanilla-wrap">
+        <div class="vanilla-app">
+          <div class="row">
+            <div class="col-4">
+              <h1>Abuja</h1>
+            </div>
+            <div class="col-4">
+              <input type="text" placeholder="Enter City" class="enterCity" />
+            </div>
+            <div class="col-4">
+              <input type="Submit" placeholder="Search" class="search" />
+            </div>
           </div>
-          <div class="col-4">
-            <input type="text" placeholder="Enter City" />
+          <div class="row">
+            <div class="col-6">
+              <ul>
+                <li>Sunday, Sept.10 ~ 05:00</li>
+                <li>Cloudy</li>
+              </ul>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-4">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-temperature-full"></i> Feels like: 22°
+                </li>
+                <li>
+                  <i class="fa-sharp fa-solid fa-fire-flame-simple"></i>
+                  Humidity: 62%
+                </li>
+                <li><i class="fa-solid fa-wind"></i> Wind: 3 km/h</li>
+              </ul>
+            </div>
           </div>
-          <div class="col-4">
-            <input type="Submit" placeholder="Search" />
+          <div class="row">
+            <div class="col-4"></div>
+            <div class="col-6">
+              <div class="flexbox temperature">
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+                  alt="clear"
+                  class="d-flex" />
+                <div class="flexbox">
+                  <strong>20</strong> <span class="units">°C|°F</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-2"></div>
           </div>
         </div>
+        <small>
+          <a href="https://github.com/ddanita/vanilla-app" target="_blank">
+            Open-source code
+          </a>
+          by Danita Okeya
+        </small>
       </div>
-      <div class="row">
-        <div class="col-6">
-          <ul>
-            <li>Sunday, Sept.10 ~ 05:00</li>
-            <li>Cloudy</li>
-          </ul>
-        </div>
-        <div class="col-6">
-          <ul>
-            <li>
-              <i class="fa-solid fa-temperature-full"></i> Feels like: 22°
-            </li>
-            <li>
-              <i class="fa-sharp fa-solid fa-fire-flame-simple"></i> Humidity:
-              62%
-            </li>
-            <li><i class="fa-solid fa-wind"></i> Wind: 3 km/h</li>
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-3"></div>
-        <div class="col-6">
-          <img
-            src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
-            alt="clear" />
-          20 °C|°F
-        </div>
-        <div class="col-3"></div>
-      </div>
-      <small>
-        <a href="https://github.com/ddanita/vanilla-app" target="_blank"
-          >Open-source code
-        </a>
-        by Danita Okeya
-      </small>
     </div>
     <script src="src/index.js"></script>
   </body>
