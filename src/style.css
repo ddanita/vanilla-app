@@ -1,11 +1,8 @@
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
 h1 {
   font-size: 40px;
-  font-weight: 700px;
+  font-weight: 800px;
   line-height: 60px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-size-adjust: 100%;
   margin-bottom: 0%;
   padding-bottom: 0%;
@@ -16,11 +13,12 @@ ul {
   list-style: none;
 }
 li {
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 400;
 }
 .vanilla-wrap {
   max-width: 600px;
-  margin: 30px auto;
+  margin: 0px auto;
 }
 .vanilla-app {
   padding: 20px;
@@ -34,13 +32,18 @@ li {
 .flexbox {
   display: flex;
 }
-.temperature img {
-  height: 64px;
-  width: 64px;
+.weather-temp img {
+  height: 94px;
+  width: 94px;
 }
-.temperature strong {
+.weather-temp strong {
   color: rgb(33, 33, 33);
-  font-size: 64px;
+  font-size: 74px;
   line-height: 1;
   font-weight: 400px;
+}
+.weather-temp .units {
+  position: relative;
+  font-size: 16px;
+  top: 9px;
 }
