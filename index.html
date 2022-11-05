@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
+
   <body>
     <div class="container">
       <div class="vanilla-wrap">
@@ -32,6 +33,7 @@
                   class="form-control"
                   id="city-input"
                   autocomplete="off" />
+              </form>
             </div>
             <div class="col-3">
               <input
@@ -39,7 +41,6 @@
                 value="Search"
                 class="btn btn-primary w-100" />
             </div>
-              </form>
           </div>
           <div class="row">
             <div class="col-6">
@@ -73,28 +74,22 @@
                 <img src="" alt="" id="icon" />
                 <strong id="temperature"></strong>
                 <span class="units"
-                  ><a href="#" id="celsius" class="active" style="text-decoration: none">°C</a> | <a style="text-decoration: none" href="" id="fahrenheit" >°F</a></span
+                  ><a
+                    href="#"
+                    id="celsius"
+                    class="active"
+                    style="text-decoration: none"
+                    >°C</a
+                  >
+                  |
+                  <a style="text-decoration: none" href="" id="fahrenheit"
+                    >°F</a
+                  ></span
                 >
               </div>
             </div>
-            <div class="weather-forecast">
-              <div class="row">
-                <div class="col-sm-3">
-                  <div class="card">
-                    <div class="card-body">
-                  <div class="forecast-date">
-                    <p class="card-text">Fri</p>  
-                  </div>
-                  <div class="fore-icon" ><img src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-night.png" alt="" width="40"></div>  
-                   <div class="forecast-temperature">
-                   <span class="forecast-max">22°</span> <span class="forecast-min">18°</span>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-            </div>
+            <div class="weather-forecast" id="forecast"></div>
           </div>
-        </div>
         </div>
         <small>
           <a href="https://github.com/ddanita/vanilla-app" target="_blank">
